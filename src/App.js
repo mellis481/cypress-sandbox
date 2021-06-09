@@ -1,13 +1,13 @@
 import React from 'react';
-import HackerNews from './HackerNews';
-import EventSandbox from './EventSandbox';
-import './styles.css';
 
 const App = () => (
   <>
-    <h1 data-testid="header-main">Cypress Sandbox</h1>
-    <EventSandbox />
-    <HackerNews />
+    <h1 data-testid="visible" style={{ opacity: 1 }}>
+      This should be visible
+    </h1>
+    <div data-testid="hidden" style={{ opacity: 0 }}>
+      This should not be visible
+    </div>
   </>
 );
 
